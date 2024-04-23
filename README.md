@@ -65,10 +65,11 @@ docker build -t luxxy-covid-testing-system-app-en:latest .
 docker tag luxxy-covid-testing-system-app-en:latest thecloudbootcamp/luxxy-covid-testing-system-app-en:latest
 docker push thecloudbootcamp/luxxy-covid-testing-system-app-en:latest
 ```
-​
+​Reason: We push image to our DockerHub account. So that on Amazon EKS , we could directly download image thorough their. 
+
 Prepare K8S deployment file
-Change bucket name
-Change image name
+- Change image name to DockerHub link (Line 33)
+- Change S3 bucket name (Line 42)
 
 Connect to AWS EKS K8S
 ```
@@ -83,7 +84,9 @@ Deploy app to K8s
 cd ../luxxy-kubernetes
 kubectl apply -f luxxy-covid-testing-system.yaml
 ```
-​
+
+Note: While provisioning there occurs an issue, because its puts an extra tag while one tag is already there. More information about issue and its solution is listed below under "Known Issue" topic. 
+
 Test it
 ```
 kubectl get svc
@@ -97,7 +100,6 @@ terraform destroy
 ```
 
 ## Known Issue
-
 Issue:
 External IP is not populated - https://github.com/kubernetes/kubernetes/issues/73906
 
@@ -107,4 +109,4 @@ Remove "[kubernetes.io/cluster/](http://kubernetes.io/cluster/)<CLUSTER_NAME>" o
 
 ## Acknowledgements
 
-Special Thanks to @Jean Rodrigues and the Cloud Bootcamp Team for conducting the training session. 
+Special Thanks to @Jean Rodrigues and the Cloud Bootcamp Team for conducting this special training session. 
