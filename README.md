@@ -7,6 +7,9 @@ This project demonstrates:
 - Leverage Kubernets and Docker to host our application in a containerized fashion
 - How to migrate on-premises application files and database to an AWS environment.
 
+## Solution Architecture
+
+![SA](https://github.com/siddharthpaliwal007/AWS_EKS_AmazonRDS_S3_Training/assets/25987777/fae905e2-d92a-4215-bcca-8739903fdb73)
 
 ## Requisites
 
