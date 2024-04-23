@@ -2,10 +2,10 @@
 
 This project demonstrates:
 
-Setting up an application running using Amazon Elastic Kubernetes Service(EKS), Amazon Relational Database Service(RDS) and Amazon S3 Services. 
-How to deploy infrastructure as a code using Terraform.
-Leverage Kubernets and Docker to host our application in a containerized fashion
-How to migrate on-premises application files and database to a AWS environment.
+- Setting up an application running using Amazon Elastic Kubernetes Service(EKS), Amazon Relational Database Service(RDS) and Amazon S3 Services. 
+- How to deploy infrastructure as a code using Terraform.
+- Leverage Kubernets and Docker to host our application in a containerized fashion
+- How to migrate on-premises application files and database to an AWS environment.
 
 
 ## Requisites
