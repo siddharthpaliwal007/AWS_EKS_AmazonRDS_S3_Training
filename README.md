@@ -12,6 +12,8 @@ This project demonstrates:
 
 AWS account, AVOID using root user account.
 
+## Steps
+
 Download project files ⬇️
 
 Set DB password variable
